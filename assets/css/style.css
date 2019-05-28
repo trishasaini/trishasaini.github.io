@@ -1,0 +1,19 @@
+.main-class {
+    background-color: cyan;
+}
+.main-class.theme-class1 {
+    color:black;
+}
+.main-class.theme-class2 {
+    width:50%;
+    float:left;
+}
+.main-class .child {
+   width:50%;
+    float:left;
+}
+.navbar{
+background-color: crimson;
+float: left;
+color: white;
+}
