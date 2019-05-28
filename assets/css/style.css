@@ -12,8 +12,13 @@
    width:50%;
     float:left;
 }
+img{
+    margin-bottom: 15px;
+}
 .navbar{
 background-color: crimson;
 float: left;
 color: white;
+padding:5px;
+display: inline-block;
 }
