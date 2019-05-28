@@ -19,6 +19,8 @@ img{
 background-color: crimson;
 float: left;
 color: white;
-padding:5px;
-display: inline-block;
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
 }
