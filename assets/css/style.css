@@ -2,23 +2,26 @@
 }
 
 .main-class.theme-class1 {
-    color: black;
+    
 }
 
 .main-class.theme-class2 {
-    width: 50%;
-    float: left;
+    
 }
 
 .main-class .child {
-    width: 50%;
-    float: left;
+    
 }
 
 img {
-    margin-bottom: 15px;
+   
 }
 
+.child{
+width:500px;
+height:500px;
+background-color: gray;
+}
 .navbar {
     list-style-type: none;
   margin: 0;
