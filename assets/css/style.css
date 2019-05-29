@@ -27,11 +27,12 @@ background-color: gray;
 overflow:auto;
 }
 .navbar {
-    list-style-type: none;
+list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333333;
+  width:100%;
 }
 
 .nav-option{
