@@ -39,3 +39,7 @@ img {
         text-decoration: none;
       
 }
+
+.nav-optioni a:hover {
+    background-color: #111111;
+  }
