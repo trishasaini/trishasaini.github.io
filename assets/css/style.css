@@ -19,6 +19,8 @@ img {
 
 .child{
     display: inline-block;
+    width:50%;
+    background-color: #777;
 }
 .navbar {
 list-style-type: none;
@@ -127,6 +129,6 @@ list-style-type: none;
   }
 
 
-  #wrapper{
+  #wrapper2{
       text-align: center;
   }
