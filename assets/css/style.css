@@ -46,3 +46,7 @@ background-color: gray;
 .nav-option a:hover {
     background-color: #111111;
   }
+
+  #search-bar{
+      float:right;
+  }
