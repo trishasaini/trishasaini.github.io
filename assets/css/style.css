@@ -19,10 +19,11 @@ img {
 
 .child{
     /* display: inline-block;
-    width:50%;
-    background-color: #777; */
+    width:50%;*/
+    background-color: #777; 
 
-    margin: 0
+    margin: 0;
+    width:500px;
 }
 .navbar {
 list-style-type: none;
