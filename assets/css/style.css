@@ -1,27 +1,33 @@
 .main-class {
     background-color: cyan;
 }
+
 .main-class.theme-class1 {
-    color:black;
+    color: black;
 }
+
 .main-class.theme-class2 {
-    width:50%;
-    float:left;
+    width: 50%;
+    float: left;
 }
+
 .main-class .child {
-   width:50%;
-    float:left;
+    width: 50%;
+    float: left;
 }
-img{
+
+img {
     margin-bottom: 15px;
 }
-.navbar{
-background-color: crimson;
-float: left;
-color: white;
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-display: block;
+
+.navbar {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+.nav-option{
+    float: left;
 }
