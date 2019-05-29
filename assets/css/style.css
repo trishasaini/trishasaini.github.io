@@ -6,7 +6,10 @@
 }
 
 .main-class.theme-class2 {
-    
+    float:left;
+    width:60%
+    height:100px;
+    background-color: cyan;
 }
 
 .main-class .child {
@@ -18,9 +21,10 @@ img {
 }
 
 .child{
-width:500px;
-height:500px;
+width:40%;
+height:100px;
 background-color: gray;
+overflow:auto;
 }
 .navbar {
     list-style-type: none;
