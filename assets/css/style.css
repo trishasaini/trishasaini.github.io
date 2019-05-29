@@ -5,12 +5,6 @@
     
 }
 
-.main-class.theme-class2 {
-    float:left;
-    width:60%
-    
-    background-color:cyan;
-}
 
 .main-class .child {
     
@@ -20,12 +14,6 @@ img {
    padding-bottom:20px;
 }
 
-.child{
-width:40%;
-
-background-color: gray;
-overflow:auto;
-}
 .navbar {
     list-style-type: none;
   margin: 0;
