@@ -12,7 +12,7 @@ margin:0;
 }
 
 .main-class.theme-class2 {
-   
+  background-color:rgba(187, 187, 187, 0.466); 
 }
 
 .main-class .child {
@@ -26,7 +26,7 @@ img.logo {
 }
 
 .container{
-    background-color:rgba(187, 187, 187, 0.466); 
+    
 
     margin: 0 auto;
     width:100%;
@@ -40,6 +40,7 @@ list-style-type: none;
   overflow: hidden;
   background-color: #333333;
   width:100%;
+  float: right;
 }
 
 .nav-option{
