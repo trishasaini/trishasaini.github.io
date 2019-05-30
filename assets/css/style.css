@@ -1,7 +1,7 @@
 body{
 padding:0;
 margin:0;
-
+background-color:
 }
 
 .main-class {
@@ -139,7 +139,7 @@ list-style-type: none;
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
-  font-size: 12px;
+  font-size: 20px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
@@ -182,3 +182,5 @@ list-style-type: none;
 .slideshow-img{
     height: 450px;
 }
+
+
