@@ -19,15 +19,13 @@ body {
   max-width: 1200px;
 }
 
-img.logo {
-  height: 32px;
-  margin: 10px;
-}
+
 
 .navbar {
   background-color: #333333;
   min-height: 50px;
   padding: 0.01px;
+  
 }
 
 .navbar ul {
@@ -35,12 +33,15 @@ img.logo {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  width: 100%;
+  width: calc(100% - 268px);
   float: right;
+  
+  
 }
 
 .nav-option {
-  float: left;
+  float: right;
+  
 }
 
 .nav-option a {
@@ -50,6 +51,7 @@ img.logo {
   padding: 16px;
   text-decoration: none;
   background-color: #333333;
+  
 }
 
 .nav-option a:hover {
@@ -61,7 +63,9 @@ img.logo {
   padding-bottom: 20px;
 }
 
-.logo {}
+.logo {
+
+}
 
 .brand-title {
   font-size: 28px;
@@ -69,8 +73,20 @@ img.logo {
   text-transform: uppercase;
   padding-left: 10px;
   overflow: hidden;
+  color:white;
 }
 
+img.logo {
+  height: 32px;
+  margin: 10px;
+}
+.v-middle{
+  display: inline-block;
+}
+.v-middle * {
+  vertical-align: middle;
+ 
+}
 /*slider
   .banner { 
       position: relative; overflow: auto; 
@@ -162,7 +178,7 @@ img.logo {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .active, .dot:hover {
@@ -200,9 +216,6 @@ img.logo {
   height: 500px;
 }
 
-.v-middle * {
-  vertical-align: middle;
-}
 
 .clear-fix {
   clear: both;
@@ -226,4 +239,21 @@ img.logo {
 
 #live-score3 {
   border: 1px solid black;
+}
+
+.right_align{
+  float: right;
+ 
+}
+.left_align{
+  float: left;
+}
+.league_name
+{
+  text-align:center;
+}
+
+.block_container{
+  display: block;
+  clear: both;
 }
