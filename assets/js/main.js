@@ -53,9 +53,41 @@ xhttp.onreadystatechange = function() {
        `;
        
        document.getElementById("live-score2").innerHTML = `
-       <h1>${parsedJson[0].goalscorer[0].home_scorer}</h1>
+       <h1 class="league_name">${parsedJson[1].league_name}</h1>
+       <div class="block_container">
+       <h3 class="left_align">Time: ${parsedJson[1].match_time}</h3>
+       <h3 class="right_align">Date: ${parsedJson[1].match_date}</h3>
+      </div>
+      
+       <div class="block_container">
+        <h2 class="home_team_score left_align">${parsedJson[1].match_hometeam_name}: ${parsedJson[1].match_hometeam_score}</h2>
+        <h2 class="away_team_score right_align">${parsedJson[1].match_awayteam_name}: ${parsedJson[1].match_awayteam_score}</h2>
+       </div>
+       <br>
+       <div class="block_container" style="text-align:center;"
+       style="float:center;">
+       <h3>Minute: ${parsedJson[1].match_live}</h3>
+       <h3>Status: ${parsedJson[1].match_status}</h3>
+       </div>
        `;
-       document.getElementById("live-score3").innerHTML =xhttp.responseText;
+       document.getElementById("live-score3").innerHTML = `
+       <h1 class="league_name">${parsedJson[2].league_name}</h1>
+       <div class="block_container">
+       <h3 class="left_align">Time: ${parsedJson[2].match_time}</h3>
+       <h3 class="right_align">Date: ${parsedJson[2].match_date}</h3>
+      </div>
+      
+       <div class="block_container">
+        <h2 class="home_team_score left_align">${parsedJson[2].match_hometeam_name}: ${parsedJson[2].match_hometeam_score}</h2>
+        <h2 class="away_team_score right_align">${parsedJson[2].match_awayteam_name}: ${parsedJson[2].match_awayteam_score}</h2>
+       </div>
+       <br>
+       <div class="block_container" style="text-align:center;"
+       style="float:center;">
+       <h3>Minute: ${parsedJson[2].match_live}</h3>
+       <h3>Status: ${parsedJson[2].match_status}</h3>
+       </div>
+       `;
        
     }
    

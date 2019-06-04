@@ -3,15 +3,11 @@ body {
   margin: 0;
 }
 
-.main-class {}
-
-.main-class.theme-class1 {}
 
 .main-class.theme-class2 {
   background-color: rgba(187, 187, 187, 0.466);
 }
 
-.main-class .child {}
 
 .container {
   margin: 0 auto;
@@ -63,9 +59,7 @@ body {
   padding-bottom: 20px;
 }
 
-.logo {
 
-}
 
 .brand-title {
   font-size: 28px;
@@ -225,21 +219,13 @@ img.logo {
   overflow: auto;
   display: block;
   float: left;
-  height: 450px;
+  height: 350px;
   width: 33%;
+ border-radius: 7px;
+border: 2px solid black;
+margin:2px;
 }
 
-#live-score1 {
-  border: 1px solid black;
-}
-
-#live-score2 {
-  border: 1px solid black;
-}
-
-#live-score3 {
-  border: 1px solid black;
-}
 
 .right_align{
   float: right;
@@ -256,4 +242,27 @@ img.logo {
 .block_container{
   display: block;
   clear: both;
+  padding: 5px;
+  font-family: "Courier";
+  font-size: 12px;
+}
+
+.news1{
+  
+ 
+  margin: 20px;
+  width:55%;
+  float:left;
+  padding: 5px 15px;
+  
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.news2{
+  
+  
+  margin:20px;
+  width:35%;
+  float:left;
+  padding:5px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
