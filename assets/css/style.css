@@ -1,13 +1,71 @@
 body {
   padding: 0;
   margin: 0;
+  box-sizing: content-box;
 }
 
-
-.main-class.theme-class2 {
-  background-color: rgba(187, 187, 187, 0.466);
+h1 {
+  margin-top: 2px;
+  margin-bottom: 5px;
 }
 
+h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 21px;
+}
+
+h4 {
+  color: rgb(70, 69, 69);
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+
+h5 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+h6 {
+  color: rgb(112, 112, 112);
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+h5.default {
+  color: rgb(89, 89, 89);
+  transition: 0.3s;
+}
+
+h5.dark {
+  color: white;
+  transition: 0.3s;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+body.default {
+  background-color: rgb(240, 238, 238);
+  transition: 0.3s;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+}
+
+body.dark {
+  background-color: #222222;
+  font-family: 'Roboto', sans-serif;
+  transition: 0.3s;
+  color: #ffffff;
+}
 
 .container {
   margin: 0 auto;
@@ -15,13 +73,33 @@ body {
   max-width: 1200px;
 }
 
-
-
 .navbar {
-  background-color: #333333;
-  min-height: 50px;
+  min-height: 70px;
   padding: 0.01px;
-  
+}
+
+.navbar.default {
+  background-color: #333333;
+  transition: 0.3s;
+}
+
+.navbar.dark {
+  background-color: #525252;
+  transition: 0.3s;
+}
+
+.navbar.default .nav-option a {
+  background-color: #333333;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar.dark .nav-option a {
+  background-color: #525252;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .navbar ul {
@@ -31,27 +109,27 @@ body {
   overflow: hidden;
   width: calc(100% - 268px);
   float: right;
-  
-  
 }
 
 .nav-option {
   float: right;
-  
 }
 
 .nav-option a {
   display: block;
-  color: white;
   text-align: center;
-  padding: 16px;
-  text-decoration: none;
-  background-color: #333333;
-  
+  padding: 25px;
+  height: 100%;
 }
 
-.nav-option a:hover {
+.navbar.default .nav-option a:hover {
   background-color: #111111;
+  transition: 0.3s;
+}
+
+.navbar.dark .nav-option a:hover {
+  background-color: #414141ef;
+  transition: 0.3s;
 }
 
 #search-bar {
@@ -59,28 +137,28 @@ body {
   padding-bottom: 20px;
 }
 
-
-
 .brand-title {
   font-size: 28px;
   line-height: 0.8;
   text-transform: uppercase;
   padding-left: 10px;
   overflow: hidden;
-  color:white;
+  color: white;
 }
 
 img.logo {
   height: 32px;
-  margin: 10px;
+  margin: 19px 10px;
 }
-.v-middle{
+
+.v-middle {
   display: inline-block;
 }
+
 .v-middle * {
   vertical-align: middle;
- 
 }
+
 /*slider
   .banner { 
       position: relative; overflow: auto; 
@@ -167,7 +245,7 @@ img.logo {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 2px 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -210,65 +288,293 @@ img.logo {
   height: 500px;
 }
 
-
 .clear-fix {
   clear: both;
 }
 
 .live-score-widget {
-  overflow: auto;
   display: block;
   float: left;
-  height: 350px;
-  width: 33%;
- border-radius: 7px;
-border: 2px solid black;
-margin:2px;
+  width: 33.333%;
+  padding: 0 10px;
 }
 
-
-.right_align{
+.right_align {
   float: right;
- 
 }
-.left_align{
+
+.left_align {
   float: left;
 }
-.league_name
-{
-  text-align:center;
+
+.league_name {
+  text-align: center;
 }
 
-.block_container{
-  display: block;
-  clear: both;
-  padding: 5px;
-  font-family: "Courier";
-  font-size: 12px;
+.card {
+  margin: 30px auto;
+  border-radius: 5px;
 }
 
-.news1{
-  
- 
+.card .card-body {
+  padding: 1rem;
+}
+
+#news1 {
   margin: 20px;
-  width:55%;
-  float:left;
+  width: 55%;
+  float: left;
   padding: 5px 15px;
-  
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-.news2{
-  
-  
-  margin:20px;
-  width:35%;
-  float:left;
-  padding:5px 15px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.club-logo{
-  height:50px;
-  width:50px;
+#news2 {
+  margin: 20px;
+  width: 37%;
+  float: left;
+  padding: 5px 15px;
+}
 
+.club-logo {
+  height: 50px;
+  width: 50px;
+}
+
+.w-300 {
+  width: 100%;
+  max-width: 300px;
+}
+
+.t {
+  display: table;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.tr {
+  display: table-row;
+}
+
+.tc {
+  display: table-cell;
+  font-size: 10px;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.half {
+  width: 50%;
+}
+
+.pl {
+  padding-left: 2rem;
+}
+
+.pr {
+  padding-right: 2rem;
+}
+
+#wrapper {
+  line-height: 1.6;
+}
+
+.card.default {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+{}
+
+.card.default .card-body {
+  background-color: white;
+}
+
+.card.dark .card-body {
+  background-color: #555555;
+}
+
+.card.dark {
+  background-color: #555555;
+  box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+}
+
+.news.default {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.news.dark {
+  background-color: #555555;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+}
+
+/* The switch - the box around the slider */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch {
+  margin-top: 20px;
+}
+
+.player-image {
+  width: 25%;
+  float: left;
+  height: 400px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Clear floats after image containers */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: #333333;
+  height:100px;
+  color: white;
+
+ 
+}
+
+footer li {
+  float: right;
+  padding: 20px;
+  font-size: 15px;
+}
+
+#loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  
+margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 25px;
+  padding-bottom: 5px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  
+}
+
+.containerTab {
+  padding: 20px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
 }

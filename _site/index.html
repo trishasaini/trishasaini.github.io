@@ -38,59 +38,56 @@
     <script>
         var globalVar = "Hi. I am a global variable.";
     </script>
-    <!-- slider
-    <script src="//code.jquery.com/jquery1.9.1.js"></script>
-    <script src="//unslider.com/unslider.js"></script>
-     -->
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-<body class="main-class">
+<body class="default">
     <header>
-            
-        <!-- <form role="search" id="search-bar">
-            <input type="text" placeholder="Search">
-            <button type="submit">Submit</button>
-        </form>-->
 
-        <nav class="navbar">
-               
+
+
+        <nav class="navbar default">
+
             <div class="container">
-                    <div class="v-middle">
-                            <img src="assets/img/logo.jpg" alt="Brand Logo" class="logo">
-                            <span class="brand-title">Soccer Stuff</span>
-                        </div>
-                <ul>
-                        
+                <div class="v-middle">
+                    <img src="assets/img/logo.jpg" alt="Brand Logo" class="logo">
+                    <span class="brand-title">Soccer Stuff</span>
+                </div>
+                <ul class="v-middle">
                     <li class="nav-option">
-                        <a href="#home">Home</a>
+                        <!-- Rounded switch -->
+                        <label class="switch">
+                            <input type="checkbox" id="toggle-class">
+                            <span class="slider round"></span>
+                        </label>
                     </li>
                     <li class="nav-option">
-                        <a href="#services">Services</a>
+                        <a href="contact">Contact</a>
                     </li>
                     <li class="nav-option">
-                        <a href="#about">About</a>
+                        <a href="services">Services</a>
                     </li>
                     <li class="nav-option">
-                        <a href="#contact">Contact</a>
+                        <a href="about">About</a>
                     </li>
+                    <li class="nav-option">
+                        <a href="/">Home</a>
+                    </li>
+
+
+
+
                 </ul>
             </div>
         </nav>
 
 
     </header>
-    <!-- slider
-    <div class="banner">
-        <ul>
-            <li>This is a slide.</li>
-            <li>This is another slide.</li>
-            <li>This is a final slide.</li>
-        </ul>
-    </div>
-   -->
 
-    <!-- Slideshow container -->
-    
+        <!-- Slideshow container -->
+
     <div class="slideshow-container">
 
         <!-- Full-width images with number and caption text -->
@@ -133,16 +130,10 @@
         <span class="dot" onclick="currentSlide(5)"></span>
     </div>
 
-
-
+   
+  
     <div id="wrapper" class="container">
-        <!---<iframe  class="live-score-widget"  
-            src="https://apifootball.com/widget/display/index.php?display=nextMatch&id=12799"></iframe>
-            <iframe class="live-score-widget"  
-            src="https://apifootball.com/widget/display/index.php?display=nextMatch&id=12799"></iframe>
-            <iframe class="live-score-widget"
-            src="https://apifootball.com/widget/display/index.php?display=nextMatch&id=12799"></iframe> -->
-
+        <div id="loader"></div>
         <div id="live-score1" class="live-score-widget">
 
         </div>
@@ -153,58 +144,109 @@
 
         </div>
 
-        <div class="clear-fix">
+        <!--<div class="player-image">
+        <img src="assets/img/messi.jpg">
+</div>
+<div class="player-image">
+        <img src="assets/img/ronaldo.jpg">
+</div>
+
+<div class="player-image">
+        <img src="assets/img/iniesta.jpg">
+</div>
+
+<div class="player-image">
+        <img src="assets/img/aguero.jpg">
+</div>-->
 
 
+       <!-- <div class="row">
 
-
+            <div class="column">
+                <div class="card default">
+                    <a href="#messi-info"><img src="assets/img/messi.jpg" alt="messi" style="width:100%"></a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card default">
+                    <a href="#ronaldo-info"> <img src="assets/img/ronaldo.jpg" alt="ronaldo" style="width:100%"></a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card default">
+                    <a href="#iniesta-info"><img src="assets/img/iniesta.jpg" alt="iniesta" style="width:100%"></a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card default">
+                    <a href="#aguero-info"> <img src="assets/img/aguero.jpg" alt="aguero" style="width:100%"></a>
+                </div>
+            </div>
         </div>
+-->
+
+
+<!-- The grid: three columns -->
+<div class="row">
+    <div class="column" onclick="openTab('b1');"><img src="assets/img/messi.jpg" alt="messi" style="width:100%"></div>
+    <div class="column" onclick="openTab('b2');" > <img src="assets/img/ronaldo.jpg" alt="ronaldo" style="width:100%"></div>
+    <div class="column" onclick="openTab('b3');" ><img src="assets/img/iniesta.jpg" alt="iniesta" style="width:100%"></div>
+    <div class="column" onclick="openTab('b4');" ><img src="assets/img/aguero.jpg" alt="aguero" style="width:100%"></div>
+</div>
+  </div>
+  
+  <!-- The expanding grid (hidden by default) -->
+  <div id="b1" class="containerTab" style="display:none;background:white; color:black;">
+    <!-- If you want the ability to close the container, add a close button -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2>Lionel Messi</h2>
+    <p>Lorem ipsum..</p>
+  </div>
+  
+  <div id="b2" class="containerTab" style="display:none;background:white; color:black;">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2>Cristanio Ronaldo</h2>
+    <p>Lorem ipsum..</p>
+  </div>
+  
+  <div id="b3" class="containerTab" style="display:none;background:white; color:black;">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2>Andres Iniesta</h2>
+    <p>Lorem ipsum..</p>
+  </div>
+
+  <div id="b4" class="containerTab" style="display:none;background:white; color:black;">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    <h2>Sergio Aguero</h2>
+    <p>Lorem ipsum..</p>
+  </div>
+
+
 
         <main>
             <div id="wrapper2">
-                <div class="news1">
-                    <h1 class="text-center">Sample Page</h1>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                        Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                        Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                        Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                        Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                        Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                        Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                        Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                        Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                        Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                        Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                        Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                        Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                        Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                    </p>
-                </div>
-                <div class="news2">
-                        <h1 class="text-center">Sample Page</h1>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                            Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                            Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                            Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                            Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                            Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                            Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                            Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                            Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                            Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                            Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                            Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                            Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                            Lorem ipsum dolor sit amet, sed cu semper prompta ceteros. Mea ei simul vidisse.
-                        </p>
-                    </div>
+
             </div>
         </main>
     </div>
 
+   
+<footer class="footer">
+        <div class="v-middle">
+            <p>&copy; 2019 Trisha Saini<p>
+        </div>
+        <ul style="list-style-type: none; float:right;">
+            <li>Contact</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Home</li>
+
+        </ul>
+    </footer>
+
     <!-- Main -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
