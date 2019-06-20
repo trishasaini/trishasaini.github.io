@@ -84,7 +84,7 @@ window.onload = function () {
     }
 
   };
-  xhttp.open("GET", "https://apifootball.com/api/?action=get_events&from=2016-10-30&to=2016-11-01&league_id=62&APIkey=f9649601a5feaeed4d337a4dd8eb1f66340c50e22d1e7f1434fe073a7d80fb5d", true);
+  xhttp.open("GET", "https://apifootball.com/api/?action=get_events&from=2016-10-30&to=2016-11-01&league_id=62&APIkey=44b3be720d1e70e5afef6764973280605efa2048592009d91158b7bcbbd4f34b", true);
   xhttp.send();
 
   $(document).ready(function () {
